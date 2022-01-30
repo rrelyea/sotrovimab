@@ -160,6 +160,7 @@ function GetProviderDetails(state, index, providers) {
               <span>{state[10] !== ""? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+state[10]}>{state[9]}</a></span> : false }</span>
               <span>{state[7] !== "" ? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+SwapKeyword(state[7],'Covid Therapeutics')}>'Covid Therapeutics' search</a></span> : false }</span>
               <span>{state[7] !== "" ? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+SwapKeyword(state[7],'Sotrovimab')}>'Sotrovimab' search</a></span> : false }</span>
+              <span>{state[8] !== ""? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+state[8]}>Covid Info</a></span> : false }</span>
               <span>{state[0] !== "" ? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={"https://"+state[0]}>{state[0]}</a></span> : false }</span>
               <span>{state[5] !== "" ? <span><span> {firstLink++ === 0?"":"|"} </span><a href={"mailto:"+state[5]}>{state[5]}</a></span> : ""}</span>  
               <span>{state[6] !== "" ? " | " + state[6] : ""}</span> 

@@ -149,7 +149,7 @@ function GetProviderDetails(state, index, providers) {
 
   var lastCity = "";
   var lastCityStyle = null;
-
+  var firstLink = 0;
   return <tbody>
              { state.length > 1 && state[2] != null && state[2].trim() !== "state" ?
           <tr>
@@ -157,9 +157,11 @@ function GetProviderDetails(state, index, providers) {
               {state[2]}
             </td>
             <td style={styles.stateInfo} colSpan='2'>
-              <a href={"https://"+state[0]}>{state[0]}</a>
-              <span>{state[7] !== "" ? <span>&nbsp;| <a href={'https://'+SwapKeyword(state[7],'Sotrovimab')}>'Sotrovimab' search</a></span> : false }</span>
-              <span>{state[5] !== "" ? <span><span> | </span><a href={"mailto:"+state[5]}>{state[5]}</a></span> : ""}</span>  
+              <span>{state[10] !== ""? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+state[10]}>{state[9]}</a></span> : false }</span>
+              <span>{state[7] !== "" ? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+SwapKeyword(state[7],'Covid Therapeutics')}>'Covid Therapeutics' search</a></span> : false }</span>
+              <span>{state[7] !== "" ? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={'https://'+SwapKeyword(state[7],'Sotrovimab')}>'Sotrovimab' search</a></span> : false }</span>
+              <span>{state[0] !== "" ? <span>&nbsp;{firstLink++ === 0?"":"|"} <a href={"https://"+state[0]}>{state[0]}</a></span> : false }</span>
+              <span>{state[5] !== "" ? <span><span> {firstLink++ === 0?"":"|"} </span><a href={"mailto:"+state[5]}>{state[5]}</a></span> : ""}</span>  
               <span>{state[6] !== "" ? " | " + state[6] : ""}</span> 
               <span>{state[4] !== "" ? <span> | <a href={"https://twitter.com/"+state[4]}>{'@'+state[4]}</a></span> : false } </span> 
             </td>

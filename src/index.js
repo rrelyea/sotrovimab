@@ -25,6 +25,9 @@ const styles = {
   mediumFont: {
     fontSize: '14pt'
   },  
+  smallFont: {
+    fontSize: '12pt'
+  },
   smallerFont: {
     fontSize: '10pt'
   },
@@ -279,8 +282,8 @@ function renderPage(states, sotrovimabSites) {
               <option key={index} value={index > 0 ? state[3].trim(): "ALL"}>{index > 0 ? state[2].trim() + " (" + state[3].trim() + ")" : "All States & Territories"}</option>
             )} 
           </select>
-          <div style={styles.smallerFont}>
-          Currently, there is no federally published info on Sotrovimab locations. This site lists state/territory health department contact info, and where possible includes a link to their health dept search page with "sotrovimab" results.
+          <div style={styles.smallFont}>
+            Links from states/territories to help you and your doctor(s) find Sotrovimab if you need it.
           </div>
           <div onClick={mapClick} style={styles.mapDiv}>
             <MapChart id='mapChart' />
@@ -295,6 +298,9 @@ function renderPage(states, sotrovimabSites) {
           <div style={styles.smallerFont}>
             Contact: <a href="https://twitter.com/rrelyea">@rrelyea</a> or <a href="mailto:rob@relyeas.net">rob@relyeas.net</a> | 
             Github repo for <a href="https://github.com/rrelyea/sotrovimab">this site</a>
+          </div>
+          <div style={styles.smallerFont}>
+            Immunocompromised? Seek <a href="https://rrelyea.github.io/evusheld">Evusheld</a> with help from your doctor(s).
           </div>
         </div>
       </div>

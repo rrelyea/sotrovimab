@@ -297,7 +297,9 @@ function renderPage(states, sotrovimabSites) {
           <div style={styles.smallerFont}>&nbsp;</div>
           <div style={styles.smallerFont}>
             Contact: <a href="https://twitter.com/rrelyea">@rrelyea</a> or <a href="mailto:rob@relyeas.net">rob@relyeas.net</a> | 
-            Github repo for <a href="https://github.com/rrelyea/sotrovimab">this site</a>
+            Github repo for <a href="https://github.com/rrelyea/sotrovimab">this site</a> |
+            Prevention locator: vaccine &amp; <a href="https://rrelyea.github.io/evusheld">evusheld</a> |
+            Treatment locator: <a href="https://rrelyea.github.io/paxlovid">paxlovid</a>
           </div>
           <div style={styles.smallerFont}>
             Immunocompromised? Seek <a href="https://rrelyea.github.io/evusheld">Evusheld</a> with help from your doctor(s).

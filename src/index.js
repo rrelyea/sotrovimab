@@ -424,10 +424,10 @@ function renderPage(states, mabSites) {
     if (zipFilter !== null && providerFilter !== null) {
       document.title = toTitleCase(providerFilter);
     } else {
-      if (stateFilter !== null && countyFilter !== null) document.title = stateFilter + "/" + toTitleCase(countyFilter) + " Evusheld";
-      else if (stateFilter !== null && cityFilter !== null) document.title = stateFilter + "/" + toTitleCase(cityFilter) + " Evusheld";
+      if (stateFilter !== null && countyFilter !== null) document.title = stateFilter + "/" + toTitleCase(countyFilter) + " " + site;
+      else if (stateFilter !== null && cityFilter !== null) document.title = stateFilter + "/" + toTitleCase(cityFilter) + " " + site;
       else if (stateFilter !== null) document.title = stateFilter + " " + site;
-      else document.title = "Evusheld";
+      else document.title = site;
     }
     var linkToState = stateFilter !== null ? "?state=" + stateFilter : window.location.pathname.split("?")[0];
     var page = 

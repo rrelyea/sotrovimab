@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sotrovimab/static/css/main.47aa69ea.css",
-    "main.js": "/sotrovimab/static/js/main.a5154114.js",
+    "main.js": "/sotrovimab/static/js/main.bf33259c.js",
     "static/js/787.68b4cbe2.chunk.js": "/sotrovimab/static/js/787.68b4cbe2.chunk.js",
     "index.html": "/sotrovimab/index.html",
     "main.47aa69ea.css.map": "/sotrovimab/static/css/main.47aa69ea.css.map",
-    "main.a5154114.js.map": "/sotrovimab/static/js/main.a5154114.js.map",
+    "main.bf33259c.js.map": "/sotrovimab/static/js/main.bf33259c.js.map",
     "787.68b4cbe2.chunk.js.map": "/sotrovimab/static/js/787.68b4cbe2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47aa69ea.css",
-    "static/js/main.a5154114.js"
+    "static/js/main.bf33259c.js"
   ]
 }
